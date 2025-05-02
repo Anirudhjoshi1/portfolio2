@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import AnirudhImg from "@/app/image.jpeg";
+
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,11 +31,11 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
-              src={AnirudhImg}
+            <img
+              src="/image.jpeg"
               alt="Anirudh portrait"
-              quality="95"
-              priority={true}
+              width={500}
+              height={300}
               className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
