@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import AnirudhImg from "../app/image.jpeg";
+import AnirudhImg from "@/app/image.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -34,8 +34,6 @@ export default function Intro() {
             <Image
               src={AnirudhImg}
               alt="Anirudh portrait"
-              width="192"
-              height="192"
               quality="95"
               priority={true}
               className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
