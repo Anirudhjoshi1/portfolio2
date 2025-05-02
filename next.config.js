@@ -11,6 +11,9 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  env: {
+    RESEND_API_KEY: process.env.RESEND_API_KEY,  // Make the API key available in the app
+  },
 };
 
 module.exports = nextConfig;

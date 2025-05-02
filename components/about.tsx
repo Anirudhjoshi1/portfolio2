@@ -18,32 +18,34 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+<p className="mb-3">
+  As a Innovative front-end developer with hands-on experience in{" "}
+  <span className="font-medium">React.js, Node.js</span>, and the{" "}
+  <span className="font-medium">MERN stack</span>, I specialize in crafting clean, responsive, and user-focused web applications. I bring a passion for performance, scalability, and intuitive design, with projects ranging from AI dashboards to real-time admin portals.
+</p>
+
+<p className="mb-3">
+  My journey into development began after completing my{" "}
+  <span className="font-medium">BCA degree</span>. Initially curious about technology, I pursued a MERN stack bootcamp and started building full-stack applications. What started as curiosity soon became a driving passion—especially the{" "}
+  <span className="italic">problem-solving and creative aspects</span> of coding. From integrating complex authentication systems to deploying apps using{" "}
+  <span className="font-medium">PM2</span>, I thrive on turning ideas into robust digital experiences.
+</p>
+
+<p className="mb-3">
+  My core stack is{" "}
+  <span className="font-medium">React, Node.js, and MongoDB</span>. I am also familiar with{" "}
+  <span className="font-medium">TypeScript, Redux</span>, and{" "}
+  <span className="font-medium">Firebase</span>. I am constantly exploring new tools and technologies, and I'm currently looking for a{" "}
+  <span className="font-medium">full-time position</span> as a software developer.
+</p>
+
+<p>
+  <span className="italic">When I'm not coding</span>, I enjoy playing video games, watching movies, Exploring New Technologies. I also enjoy{" "}
+
+  <span className="font-medium"> learning about psychology and human behavior..</span> 
+</p>
+
     </motion.section>
   );
 }

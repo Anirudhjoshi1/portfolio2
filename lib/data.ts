@@ -5,6 +5,11 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import acepitch from '../public/acepitch.jpg'
+import dashboard from '../public/dashboard.jpg'
+import Quiz from '../public/gamify.jpg'
+import Ecom from '../public/Ecommerce.jpg'
+
 
 export const links = [
   {
@@ -35,53 +40,66 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "InstaDataHelp , Banglore",
+    location: "AI & Frontend Developer Intern ",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed a full-stack AI product management platform with role-based authentication. Deployed the project using Pm2, managed version control with Git, and collaborated with AI teams to align features with product goals.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2025 - present",
+  },
+  {
+    title: "Q spiders , Noida",
+    location: "Mern Stack Trainee",
+    description:
+      "Internship and Certifications at Qspiders , Upskilled in MERN Stack, mentored by industry experts from leading IT companies.",
+    icon: React.createElement(CgWorkAlt),
+    date: " JUL 2024 - DEC 2024 ",
+  },
+  {
+    title: "Danstring Technologies , Delhi",
+    location: "React Js Intern",
+    description:
+      "Designed interactive dashboards with React and Material UI Implemented SPA components, tables, forms using React RouterEnhanced UI accessibility and optimized for mobile",
+    icon: React.createElement(FaReact),
+    date: "JUL 2023 - SEP 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "AcePitch ",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    "Developed a secure Web Application with role-based authentication. Deployed both frontend and backend to a live server using PM2.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
+    imageUrl: acepitch,
+    url: "http://101.53.149.101:5174/login"
   },
   {
-    title: "rmtDev",
+    title: "Dashboard with Material UI",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    "Built a real-time admin dashboard with product management and Firebase Firestore CRUD operations.",
+    tags: ["React", "Firebase", "Material UI"],
+    imageUrl: dashboard,
+    url:"https://dashboardwithmui.netlify.app/home?"
   },
   {
-    title: "Word Analytics",
+    title: "Quiz Game",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    "Interactive quiz game with a countdown timer, score tracking, smooth UI transitions, and randomized questions.",
+     tags: ["React", "JavaScript", "CSS" , "Rest Api"],
+    imageUrl: Quiz,
+    url:"https://gameifyquiz.netlify.app/"
   },
+
+  {
+    title: "E-Commerce Website",
+    description:
+      "Responsive e-commerce site with product browsing and cart features, designed mobile-first for cross-device compatibility.",
+    tags: ["HTML", "CSS", "JavaScript" , "Git"],
+    imageUrl: Ecom,
+    url:"https://vougecloset.netlify.app/"
+  },
+
 ] as const;
 
 export const skillsData = [
@@ -90,18 +108,15 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MySql",
+  "Pm2",
+  "Material UI",
+  "Canva"
+ 
 ] as const;
