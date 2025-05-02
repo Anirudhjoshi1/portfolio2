@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import acepitch from '@/public/acepitch.jpg'
-import dashboard from '@/public/dashboard.jpg'
-import Quiz from '@/public/gamify.jpg'
-import Ecom from '@/public/Ecommerce.jpg'
+import acepitch from '/public/acepitch.jpg'
+import dashboard from '/public/dashboard.jpg'
+import Quiz from '/public/gamify.jpg'
+import Ecom from '/public/Ecommerce.jpg'
 
 
 export const links = [
@@ -63,40 +63,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "AcePitch ",
+    title: "AcePitch",
     description:
-    "Developed a secure Web Application with role-based authentication. Deployed both frontend and backend to a live server using PM2.",
+      "Developed a secure Web Application with role-based authentication. Deployed both frontend and backend to a live server using PM2.",
     tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
-    imageUrl: acepitch,
-    url: "http://101.53.149.101:5174/login"
+    imageUrl: "/acepitch.jpg",
+    url: "http://101.53.149.101:5174/login",
   },
   {
     title: "Dashboard with Material UI",
     description:
-    "Built a real-time admin dashboard with product management and Firebase Firestore CRUD operations.",
+      "Built a real-time admin dashboard with product management and Firebase Firestore CRUD operations.",
     tags: ["React", "Firebase", "Material UI"],
-    imageUrl: dashboard,
-    url:"https://dashboardwithmui.netlify.app/home?"
+    imageUrl: "/dashboard.jpg",
+    url: "https://dashboardwithmui.netlify.app/home?",
   },
   {
     title: "Quiz Game",
     description:
-    "Interactive quiz game with a countdown timer, score tracking, smooth UI transitions, and randomized questions.",
-     tags: ["React", "JavaScript", "CSS" , "Rest Api"],
-    imageUrl: Quiz,
-    url:"https://gameifyquiz.netlify.app/"
+      "Interactive quiz game with a countdown timer, score tracking, smooth UI transitions, and randomized questions.",
+    tags: ["React", "JavaScript", "CSS", "Rest Api"],
+    imageUrl: "/gamify.jpg",
+    url: "https://gameifyquiz.netlify.app/",
   },
-
   {
     title: "E-Commerce Website",
     description:
       "Responsive e-commerce site with product browsing and cart features, designed mobile-first for cross-device compatibility.",
-    tags: ["HTML", "CSS", "JavaScript" , "Git"],
-    imageUrl: Ecom,
-    url:"https://vougecloset.netlify.app/"
+    tags: ["HTML", "CSS", "JavaScript", "Git"],
+    imageUrl: "/Ecommerce.jpg",
+    url: "https://vougecloset.netlify.app/",
   },
-
 ] as const;
+
 
 export const skillsData = [
   "HTML",
