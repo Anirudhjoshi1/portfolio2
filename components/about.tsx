@@ -26,8 +26,8 @@ export default function About() {
 </p>
 
 <p className="mb-3">
-  My journey into development began after completing my{" "}
-  <span className="font-medium">BCA degree</span>. Initially curious about technology, I pursued a MERN stack bootcamp and started building full-stack applications. What started as curiosity soon became a driving passion—especially the{" "}
+
+  <span className="font-medium"></span> Initially curious about technology, I pursued a MERN stack bootcamp and started building full-stack applications. What started as curiosity soon became a driving passion—especially the{" "}
   <span className="italic">problem-solving and creative aspects</span> of coding. From integrating complex authentication systems to deploying apps using{" "}
   <span className="font-medium">PM2</span>, I thrive on turning ideas into robust digital experiences.
 </p>
