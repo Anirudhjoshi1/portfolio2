@@ -60,9 +60,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "AcePitch",
+    title: "Bid Comparison & Excel Exporter AI",
     description:
-      "Developed a secure Web Application with role-based authentication. Deployed both frontend and backend to a live server using PM2.",
+      "I built a production-grade web app used in actual construction procurement workflows to compare multi-vendor BOQ quotes against a baseline estimate and generate a polished Excel comparative statement. .",
+    tags: ["React", "Sheet Js", "Tailwind Css"],
+    imageUrl: "/bidapppro.jpg",
+    url: "https://bidapppro.netlify.app/",
+  },
+   {
+    title: "MedXpert AI",
+    description:
+      "Developed a web application Dashboard designed for pharmaceutical professionals to assist in the review, validation, and improvement of medical formulations. ",
+    tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
+    imageUrl: "/medexo.jpg",
+    url: "https://medexpertdemo.netlify.app/",
+  },
+  {
+    title: "AcePitch AI",
+    description:
+      "Built a full-stack, role-based web dashboard for a RAG-powered AI platform that trains automotive salespeople.",
     tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
     imageUrl: "/acepitch.jpg",
     url: "http://101.53.149.101:5174/login",
