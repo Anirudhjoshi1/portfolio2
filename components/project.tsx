@@ -1,13 +1,20 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowUpRightSquare, BsBriefcaseFill } from "react-icons/bs";
 
-type ProjectProps = (typeof projectsData)[number];
+// SAFE FIX: Define the props manually to prevent Data/Component mismatches
+type ProjectProps = {
+  title: string;
+  description: readonly string[]; // We explicitly say this MUST be an array
+  tags: readonly string[];
+  imageUrl: string;
+  url: string;
+  githubUrl?: string; // Optional
+};
 
 export default function Project({
   title,
@@ -40,8 +47,7 @@ export default function Project({
         href={url} 
         target="_blank" 
         rel="noopener noreferrer"
-        // CHANGE HERE: Changed sm:h-[24rem] to sm:h-[30rem] to fit more content
-        className="block bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[30rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 shadow-md hover:shadow-xl"
+        className="block bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[32rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 shadow-md hover:shadow-xl"
       >
         {isClientProject && (
            <div className="absolute top-4 right-4 z-20 flex items-center gap-1 bg-amber-400 text-amber-950 text-[0.7rem] font-bold px-3 py-1 rounded-full shadow-sm uppercase tracking-wider">
@@ -53,9 +59,12 @@ export default function Project({
           
           <h3 className="text-2xl font-bold text-gray-800 dark:text-white">{title}</h3>
           
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-sm">
-            {description}
-          </p>
+          {/* This .map() requires description to be an array in lib/data.ts */}
+          <ul className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-sm list-disc ml-4 space-y-1">
+            {description.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
           
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (

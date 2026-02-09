@@ -67,44 +67,50 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
- {
-  title: "Bid Management System (ANPCPMC)",
-  description:
-    "Engineered a production-grade Bid Management Tool for ANPCPMC, a Bangalore-based PMC firm. This solution automates multi-vendor BOQ comparisons and generates audit-ready Excel comparative statements, streamlining high-value construction procurement.",
-  tags: ["React", "SheetJS", "Tailwind CSS", "Production"],
-  imageUrl: "/bidapppro.jpg",
-  url: "https://bidapppro.netlify.app/",
-},
-
-{
-  title: "Horizon Group Digital Ecosystem",
-  description:
-    "Architected a scalable multi-platform web ecosystem for Horizon Group, a leading Zambian conglomerate. This solution integrates distinct business verticals—Logistics (Haulers) and Energy—under a unified React architecture, featuring a custom Admin Dashboard for real-time content control and service management.",
-  tags: ["React", "Tailwind", "Admin Panel", "Client Project"],
-  imageUrl: "/horizon.jpg",
-  url: "https://horizon.co.zm/",
-},
-
-
-{
-  title: "FleetSync: Modern Telematics Dashboard",
-  description:
-    "Designed and developed a cutting-edge React.js fleet management interface for Technauto, a premier Dubai-based telematics firm. This high-performance dashboard features a 'super-cool' modern UI with real-time map integration, providing their clients with a seamless, futuristic way to track assets across the UAE.",
-  tags: ["React", "Tailwind CSS", "Google Maps API", "Client Project"],
-  imageUrl: "/fleetsync.jpg", // Make sure to add a screenshot
-  url: "https://fleetsyncc.netlify.app/",
-},
-
-
-{
-  title: "Pharma LMS",
-  description:
-    "Developed a specialized Learning Management System (LMS) for InstaDataHelp to train pharmaceutical students and medical representatives. This platform gamifies the learning process for the 'Preswrite Pro' tool, featuring interactive video modules, role-play assessments, and real-time performance analytics.",
-  tags: ["React", "Tailwind" , "EdTech", "LMS", "Client Project"],
-  imageUrl: "/Lms.jpg", // Make sure to add this image
-  url: "https://lms-demo0.netlify.app/",
-},
- 
+  {
+    title: "Bid Management System (ANPCPMC)",
+    description: [
+      "Engineered a production-grade Bid Management Tool for ANPCPMC, a Bangalore-based PMC firm.",
+      "Automated multi-vendor BOQ comparisons to generate audit-ready Excel comparative statements.",
+      "Streamlined high-value construction procurement workflows, reducing manual error rates by 90%."
+    ],
+    tags: ["React", "SheetJS", "Tailwind CSS", "Production"],
+    imageUrl: "/bidapppro.jpg",
+    url: "https://bidapppro.netlify.app/",
+  },
+  {
+    title: "Horizon Group Digital Ecosystem",
+    description: [
+      "Architected a scalable multi-platform web ecosystem for Horizon Group, a leading Zambian conglomerate.",
+      "Integrated distinct business verticals (Logistics & Energy) under a unified React architecture.",
+      "Developed a custom Admin Dashboard for real-time content control and service management."
+    ],
+    tags: ["React", "Tailwind", "Admin Panel", "Client Project"],
+    imageUrl: "/horizon.jpg",
+    url: "https://horizon.co.zm/",
+  },
+  {
+    title: "FleetSync: Modern Telematics Dashboard",
+    description: [
+      "Designed a cutting-edge React.js fleet management interface for Technauto, a premier Dubai-based telematics firm.",
+      "Implemented a high-performance modern UI with real-time Google Maps integration.",
+      "Provided clients with a seamless, futuristic way to track assets across the UAE."
+    ],
+    tags: ["React", "Tailwind CSS", "Google Maps API", "Client Project"],
+    imageUrl: "/fleetsync.jpg", 
+    url: "https://fleetsyncc.netlify.app/",
+  },
+  {
+    title: "Pharma LMS (Preswrite Pro)",
+    description: [
+      "Developed a specialized LMS for InstaDataHelp to train pharmaceutical students and medical representatives.",
+      "Gamified the learning process for the 'Preswrite Pro' tool with interactive video modules.",
+      "Integrated role-play assessments and real-time performance analytics."
+    ],
+    tags: ["React", "Tailwind", "EdTech", "LMS", "Client Project"],
+    imageUrl: "/Lms.jpg",
+    url: "https://lms-demo0.netlify.app/",
+  },
 ] as const;
 
 
