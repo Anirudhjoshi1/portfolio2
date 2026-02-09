@@ -33,98 +33,104 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "InstaDataHelp , Banglore",
-    location: "AI & Frontend Developer Intern ",
-    description:
-      "Developed a full-stack AI product management platform with role-based authentication. Deployed the project using Pm2, managed version control with Git, and collaborated with AI teams to align features with product goals.",
+    title: "InstaDataHelp, Bangalore",
+    location: "AI & Frontend Developer Intern",
+    description: [
+      "Serving as a key AI full-stack developer delivering production-grade software for diverse international clients.",
+      "Engineered the Horizon Digital Ecosystem (Logistics), the FleetSync Telematics Dashboard, and AI-Based LMS For Pharma.",
+      "My role spans the entire SDLC—from architecting scalable React/Node.js solutions to integrating Generative AI agents and managing live cloud deployments."
+    ],
     icon: React.createElement(FaReact),
     date: "2025 - present",
   },
   {
-    title: "Q spiders , Noida",
-    location: "Mern Stack Trainee",
-    description:
-      "Internship and Certifications at Qspiders , Upskilled in MERN Stack, mentored by industry experts from leading IT companies.",
+    title: "Q Spiders, Noida",
+    location: "MERN Stack Trainee",
+    description: [
+      "Completed intensive internship and certifications in Full Stack Web Development.",
+      "Upskilled in the MERN Stack ecosystem, mentored directly by industry experts from leading IT companies."
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: " JUL 2024 - DEC 2024 ",
+    date: "JUL 2024 - DEC 2024",
   },
   {
-    title: "Danstring Technologies , Delhi",
-    location: "React Js Intern",
-    description:
-      "Designed interactive dashboards with React and Material UI Implemented SPA components, tables, forms using React RouterEnhanced UI accessibility and optimized for mobile",
+    title: "Danstring Technologies, Delhi",
+    location: "React.js Intern",
+    description: [
+      "Designed interactive dashboards using React and Material UI.",
+      "Implemented complex SPA components, dynamic tables, and forms using React Router.",
+      "Enhanced UI accessibility (WCAG) and optimized performance for mobile devices."
+    ],
     icon: React.createElement(FaReact),
     date: "JUL 2023 - SEP 2023",
   },
 ] as const;
 
 export const projectsData = [
-  {
-    title: "Bid Comparison & Excel Exporter AI",
-    description:
-      "I built a production-grade web app used in actual construction procurement workflows to compare multi-vendor BOQ quotes against a baseline estimate and generate a polished Excel comparative statement. .",
-    tags: ["React", "Sheet Js", "Tailwind Css"],
-    imageUrl: "/bidapppro.jpg",
-    url: "https://bidapppro.netlify.app/",
-  },
-   {
-    title: "MedXpert AI",
-    description:
-      "Developed a web application Dashboard designed for pharmaceutical professionals to assist in the review, validation, and improvement of medical formulations. ",
-    tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
-    imageUrl: "/medexo.jpg",
-    url: "https://medexpertdemo.netlify.app/",
-  },
-  {
-    title: "AcePitch AI",
-    description:
-      "Built a full-stack, role-based web dashboard for a RAG-powered AI platform that trains automotive salespeople.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"],
-    imageUrl: "/acepitch.jpg",
-    url: "http://101.53.149.101:5174/login",
-  },
-  {
-    title: "Dashboard with Material UI",
-    description:
-      "Built a real-time admin dashboard with product management and Firebase Firestore CRUD operations.",
-    tags: ["React", "Firebase", "Material UI"],
-    imageUrl: "/dashboard.jpg",
-    url: "https://dashboardwithmui.netlify.app/home?",
-  },
-  {
-    title: "Quiz Game",
-    description:
-      "Interactive quiz game with a countdown timer, score tracking, smooth UI transitions, and randomized questions.",
-    tags: ["React", "JavaScript", "CSS", "Rest Api"],
-    imageUrl: "/gamify.jpg",
-    url: "https://gameifyquiz.netlify.app/",
-  },
-  {
-    title: "E-Commerce Website",
-    description:
-      "Responsive e-commerce site with product browsing and cart features, designed mobile-first for cross-device compatibility.",
-    tags: ["HTML", "CSS", "JavaScript", "Git"],
-    imageUrl: "/Ecommerce.jpg",
-    url: "https://vougecloset.netlify.app/",
-  },
+ {
+  title: "Bid Management System (ANPCPMC)",
+  description:
+    "Engineered a production-grade Bid Management Tool for ANPCPMC, a Bangalore-based PMC firm. This solution automates multi-vendor BOQ comparisons and generates audit-ready Excel comparative statements, streamlining high-value construction procurement.",
+  tags: ["React", "SheetJS", "Tailwind CSS", "Production"],
+  imageUrl: "/bidapppro.jpg",
+  url: "https://bidapppro.netlify.app/",
+},
+
+{
+  title: "Horizon Group Digital Ecosystem",
+  description:
+    "Architected a scalable multi-platform web ecosystem for Horizon Group, a leading Zambian conglomerate. This solution integrates distinct business verticals—Logistics (Haulers) and Energy—under a unified React architecture, featuring a custom Admin Dashboard for real-time content control and service management.",
+  tags: ["React", "Tailwind", "Admin Panel", "Client Project"],
+  imageUrl: "/horizon.jpg",
+  url: "https://horizon.co.zm/",
+},
+
+
+{
+  title: "FleetSync: Modern Telematics Dashboard",
+  description:
+    "Designed and developed a cutting-edge React.js fleet management interface for Technauto, a premier Dubai-based telematics firm. This high-performance dashboard features a 'super-cool' modern UI with real-time map integration, providing their clients with a seamless, futuristic way to track assets across the UAE.",
+  tags: ["React", "Tailwind CSS", "Google Maps API", "Client Project"],
+  imageUrl: "/fleetsync.jpg", // Make sure to add a screenshot
+  url: "https://fleetsyncc.netlify.app/",
+},
+
+
+{
+  title: "Pharma LMS",
+  description:
+    "Developed a specialized Learning Management System (LMS) for InstaDataHelp to train pharmaceutical students and medical representatives. This platform gamifies the learning process for the 'Preswrite Pro' tool, featuring interactive video modules, role-play assessments, and real-time performance analytics.",
+  tags: ["React", "Tailwind" , "EdTech", "LMS", "Client Project"],
+  imageUrl: "/Lms.jpg", // Make sure to add this image
+  url: "https://lms-demo0.netlify.app/",
+},
+ 
 ] as const;
 
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
+  // Core Full Stack
   "React",
+  "Next.js",
+  "TypeScript",
   "Node.js",
-  "Git",
   "Tailwind",
+  "Framer Motion", // Crucial for "cool" UI
+  
+  // The AI Stack (2026 Essentials)
+  "Python",          // The language of AI
+  "LangChain",       // Standard for building AI Apps
+  "RAG Architecture",// Retrieval-Augmented Generation (Hot skill)
+  "OpenAI API",
+  "Hugging Face",    // For open-source models
+  "Vector Databases",// (Pinecone/Chroma) - Memory for AI
+  "AI Agents",       // Building autonomous bots
+  
+  // Backend & Ops
+  "Prisma",
   "MongoDB",
-  "Redux",
+  "PostgreSQL",      // Better than MySQL for Vector search
+  "Docker",          // Essential for deploying AI services
+  "Git",
   "Express",
-  "MySql",
-  "Pm2",
-  "Material UI",
-  "Canva"
- 
 ] as const;

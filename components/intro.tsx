@@ -10,7 +10,6 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -19,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[55rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -31,12 +30,17 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <img
+            {/* Added a subtle gradient glow behind the image for better UI */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-lg opacity-50 transform scale-110 -z-10"></div>
+            
+            <Image
               src="/image.jpeg"
               alt="Anirudh portrait"
-              width={500}
-              height={300}
-              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              width={192}
+              height={192}
+              quality={95}
+              priority={true}
+              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-2xl"
             />
           </motion.div>
 
@@ -61,19 +65,28 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Anirudh.</span> I'm a{" "}
-        <span className="font-bold">React.js Developer</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I love crafting{" "}
-        <span className="italic">
-          modern, scalable, and user-focused web applications
+        <span className="font-bold">Hello, I'm </span>
+        {/* Gradient Text for Name */}
+        <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          Anirudh.
+        </span>{" "}
+        I engineer{" "}
+        <span className="font-bold">intelligent web solutions.</span>
+        <br />
+        I specialize in{" "}
+        <span className="font-bold underline decoration-blue-500/50">
+          Full-Stack React Architecture
+        </span>{" "}
+        and{" "}
+        <span className="font-bold underline decoration-purple-500/50">
+          AI-Driven Development
         </span>
-        . My current focus is{" "}
-        <span className="underline">React and Next.js</span>.
+        . I build scalable, catchy apps that merge robust backend logic with cutting-edge{" "}
+        <span className="italic">Generative AI integrations</span>.
       </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium mt-10"
-
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -82,7 +95,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition shadow-lg hover:shadow-xl"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -93,7 +106,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 shadow-sm hover:shadow-md"
           href="/CV.pdf"
           download
         >
@@ -101,21 +114,23 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/anirudh-joshi-1869b8373/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <div className="flex gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-[#0077b5] flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-sm hover:shadow-md"
+            href="https://www.linkedin.com/in/anirudh-joshi-1869b8373/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Anirudhjoshi1"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-sm hover:shadow-md"
+            href="https://github.com/Anirudhjoshi1"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

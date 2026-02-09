@@ -19,33 +19,52 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 
-<p className="mb-3">
-  As a Innovative front-end developer with hands-on experience in{" "}
-  <span className="font-medium">React.js, Node.js</span>, and the{" "}
-  <span className="font-medium">MERN stack</span>, I specialize in crafting clean, responsive, and user-focused web applications. I bring a passion for performance, scalability, and intuitive design, with projects ranging from AI dashboards to real-time admin portals.
-</p>
+      <div className="text-gray-700 dark:text-gray-300">
+        <p className="mb-3">
+          With <span className="font-bold">1 year of specialized experience</span>
+          , I have transitioned from a coding enthusiast to a professional building{" "}
+          <span className="font-bold">production-level applications</span>. I
+          have successfully collaborated with{" "}
+          <span className="font-bold underline decoration-blue-500/30">
+            foreign clients
+          </span>{" "}
+          and businesses to deliver scalable solutions, ranging from robust{" "}
+          <span className="font-bold">Learning Management Systems (LMS)</span>{" "}
+          to intelligent <span className="font-bold">AI-powered tools</span>.
+        </p>
 
-<p className="mb-3">
+        <p className="mb-3">
+          My freelance journey has been defined by solving real-world problems. I
+          specialize in{" "}
+          <span className="font-bold italic">integrating AI solutions</span> into
+          business infrastructures, transforming static platforms into dynamic,
+          intelligent ecosystems using{" "}
+          <span className="font-bold">React, Next.js, and Node.js</span>.
+          Whether it's a complex dashboard or a customer-facing site, I focus on
+          performance and user experience.
+        </p>
 
-  <span className="font-medium"></span> Initially curious about technology, I pursued a MERN stack bootcamp and started building full-stack applications. What started as curiosity soon became a driving passion—especially the{" "}
-  <span className="italic">problem-solving and creative aspects</span> of coding. From integrating complex authentication systems to deploying apps using{" "}
-  <span className="font-medium">PM2</span>, I thrive on turning ideas into robust digital experiences.
-</p>
+        <p className="mb-3">
+          My core stack is{" "}
+          <span className="font-medium">MERN (MongoDB, Express, React, Node.js)</span>
+          . I am also proficient in{" "}
+          <span className="font-medium">TypeScript, Redux, and Firebase</span>. I
+          am constantly upskilling to stay ahead of the curve, currently exploring
+          advanced <span className="font-medium">Generative AI</span> workflows. I
+          am now looking for a <span className="font-bold">full-time position</span>{" "}
+          where I can leverage my skills to build the future of tech.
+        </p>
 
-<p className="mb-3">
-  My core stack is{" "}
-  <span className="font-medium">React, Node.js, and MongoDB</span>. I am also familiar with{" "}
-  <span className="font-medium">TypeScript, Redux</span>, and{" "}
-  <span className="font-medium">Firebase</span>. I am constantly exploring new tools and technologies, and I'm currently looking for a{" "}
-  <span className="font-medium">full-time position</span> as a software developer.
-</p>
-
-<p>
-  <span className="italic">When I'm not coding</span>, I enjoy playing video games, watching movies, Exploring New Technologies. I also enjoy{" "}
-
-  <span className="font-medium"> learning about psychology and human behavior..</span> 
-</p>
-
+        <p>
+          <span className="italic">When I'm not coding</span>, I enjoy playing
+          video games, watching movies, and exploring new technologies. I also
+          have a keen interest in{" "}
+          <span className="font-medium">
+            psychology and human behavior
+          </span>
+          , which helps me design more intuitive user experiences.
+        </p>
+      </div>
     </motion.section>
   );
 }

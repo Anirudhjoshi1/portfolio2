@@ -3,7 +3,6 @@
 import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
-import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -11,7 +10,6 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // Validation
   if (!validateString(senderEmail, 500)) {
     return { error: "Invalid sender email" };
   }
@@ -19,20 +17,23 @@ export const sendEmail = async (formData: FormData) => {
     return { error: "Invalid message" };
   }
 
+  let data;
   try {
-    const data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "your-email@example.com", // replace with your actual receiving email
+    data = await resend.emails.send({
+      from: "Contact Form <contact@anirudh-portfolio.com>",
+      to: "anirudh.53.aj@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
-      react: React.createElement(ContactFormEmail, {
-        message,
-        senderEmail,
-      }),
+      // CHANGE: Add the sender's email clearly at the top of the message
+      text: `Message from: ${senderEmail}\n\n${message}`,
     });
-
-    return { data };
   } catch (error: unknown) {
-    return { error: getErrorMessage(error) };
+    return {
+      error: getErrorMessage(error),
+    };
   }
+
+  return {
+    data,
+  };
 };
