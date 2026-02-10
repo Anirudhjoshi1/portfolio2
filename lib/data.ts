@@ -76,7 +76,7 @@ export const projectsData = [
     ],
     tags: ["React", "SheetJS", "Tailwind CSS", "Production"],
     imageUrl: "/bidapppro.jpg",
-    url: "https://bidapppro.netlify.app/",
+    url: "https://bid-app-latest.vercel.app/",
   },
   {
     title: "Horizon Group Digital Ecosystem",
@@ -97,8 +97,8 @@ export const projectsData = [
       "Provided clients with a seamless, futuristic way to track assets across the UAE."
     ],
     tags: ["React", "Tailwind CSS", "Google Maps API", "Client Project"],
-    imageUrl: "/fleetsync.jpg", 
-    url: "https://fleetsyncc.netlify.app/",
+    imageUrl: "/Fleetsync.jpg", 
+    url: "https://fleet-sync-sage.vercel.app/",
   },
   {
     title: "Pharma LMS (Preswrite Pro)",
@@ -108,8 +108,8 @@ export const projectsData = [
       "Integrated role-play assessments and real-time performance analytics."
     ],
     tags: ["React", "Tailwind", "EdTech", "LMS", "Client Project"],
-    imageUrl: "/Lms.jpg",
-    url: "https://lms-demo0.netlify.app/",
+    imageUrl: "/LMS.jpg",
+    url: "https://module-explorer-hub.vercel.app",
   },
 ] as const;
 
