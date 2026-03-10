@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -8,10 +8,15 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space",
+});
 
 export const metadata = {
-  title: "Anirudh | Personal Portfolio",
-  description: "Ricardo is a full-stack developer with 8 years of experience.",
+  title: "Anirudh | AI-Powered Full-Stack Developer",
+  description:
+    "Anirudh Joshi — AI-focused full-stack developer specializing in React, Next.js, Three.js, and Generative AI integrations. Building intelligent web solutions.",
 };
 
 export default function RootLayout({
@@ -22,10 +27,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} ${spaceGrotesk.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-[#0a0a0f] dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        {/* Ambient gradient orbs */}
+        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#1a0a2e] dark:opacity-40"></div>
+        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#0a1628] dark:opacity-40"></div>
+
+        {/* Subtle grid pattern */}
+        <div
+          className="fixed inset-0 -z-20 opacity-[0.015] dark:opacity-[0.03] pointer-events-none"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 212, 255, 0.3) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 212, 255, 0.3) 1px, transparent 1px)`,
+            backgroundSize: "60px 60px",
+          }}
+        ></div>
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
