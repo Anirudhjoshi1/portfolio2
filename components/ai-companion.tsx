@@ -117,7 +117,7 @@ export default function AiCompanion() {
 
     const openWhatsApp = () => {
         // Replace with your actual phone number, including country code (e.g., 91 for India)
-        window.open("https://wa.me/918302324706", "_blank");
+        window.open("https://wa.me/919654471086", "_blank");
         setMessage("Opening WhatsApp! 💬");
     };
 

@@ -78,8 +78,11 @@ export default function Experience() {
                   icon={item.icon}
                   iconStyle={{
                     background: isDark
-                      ? "linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(168, 85, 247, 0.2))"
+                      ? "#0a0a0f"
                       : "white",
+                    backgroundImage: isDark
+                      ? "linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(168, 85, 247, 0.2))"
+                      : "none",
                     fontSize: "1.5rem",
                     boxShadow: isDark
                       ? "0 0 15px rgba(0, 212, 255, 0.3)"

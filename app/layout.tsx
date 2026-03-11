@@ -49,7 +49,18 @@ export default function RootLayout({
             {children}
             <Footer />
 
-            <Toaster position="top-right" />
+            <Toaster
+              position="top-right"
+              toastOptions={{
+                className: "!bg-white/80 dark:!bg-[#0a0a0f]/80 !backdrop-blur-md !border !border-gray-200 dark:!border-white/10 !text-gray-950 dark:!text-white !shadow-[0_0_15px_rgba(0,212,255,0.15)]",
+                success: {
+                  iconTheme: {
+                    primary: '#00d4ff',
+                    secondary: '#fff',
+                  },
+                },
+              }}
+            />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

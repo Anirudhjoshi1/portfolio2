@@ -34,7 +34,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "InstaDataHelp, Bangalore",
-    location: "AI & Frontend Developer Intern",
+    location: "AI & Frontend Developer",
     description: [
       "Serving as a key AI full-stack developer delivering production-grade software for diverse international clients.",
       "Engineered the Horizon Digital Ecosystem (Logistics), the FleetSync Telematics Dashboard, and AI-Based LMS For Pharma.",
@@ -97,7 +97,7 @@ export const projectsData = [
       "Provided clients with a seamless, futuristic way to track assets across the UAE."
     ],
     tags: ["React", "Tailwind CSS", "Google Maps API", "Client Project"],
-    imageUrl: "/Fleetsync.jpg", 
+    imageUrl: "/Fleetsync.jpg",
     url: "https://fleet-sync-sage.vercel.app/",
   },
   {
@@ -122,7 +122,7 @@ export const skillsData = [
   "Node.js",
   "Tailwind",
   "Framer Motion", // Crucial for "cool" UI
-  
+
   // The AI Stack (2026 Essentials)
   "Python",          // The language of AI
   "LangChain",       // Standard for building AI Apps
@@ -131,7 +131,7 @@ export const skillsData = [
   "Hugging Face",    // For open-source models
   "Vector Databases",// (Pinecone/Chroma) - Memory for AI
   "AI Agents",       // Building autonomous bots
-  
+
   // Backend & Ops
   "Prisma",
   "MongoDB",
