@@ -122,7 +122,7 @@ export default function AiCompanion() {
     };
 
     return (
-        <div ref={companionRef} className="fixed bottom-6 left-6 z-[999] flex flex-col items-start pointer-events-none">
+        <div ref={companionRef} className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-[999] flex flex-col items-start pointer-events-none">
 
             {/* Chat Bubble */}
             <AnimatePresence>
@@ -132,9 +132,9 @@ export default function AiCompanion() {
                         animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
                         exit={{ opacity: 0, scale: 0.8, y: 10, x: -10 }}
                         transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                        className="pointer-events-auto mb-4 ml-4 relative glass-card p-3 rounded-2xl rounded-bl-sm w-[220px] shadow-neon z-50 flex flex-col gap-3"
+                        className="pointer-events-auto mb-3 sm:mb-4 ml-2 sm:ml-4 relative glass-card p-2 sm:p-3 rounded-2xl rounded-bl-sm w-[180px] sm:w-[220px] shadow-neon z-50 flex flex-col gap-2 sm:gap-3"
                     >
-                        <p className="text-sm font-medium text-gray-800 dark:text-gray-100 font-mono">
+                        <p className="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-100 font-mono">
                             {message}
                         </p>
 
@@ -205,15 +205,15 @@ export default function AiCompanion() {
                 {/* Antenna */}
                 <div className="flex flex-col items-center -mb-1 transform translate-y-1">
                     <motion.div
-                        className="w-2.5 h-2.5 rounded-full bg-[#00d4ff] shadow-[0_0_8px_#00d4ff]"
+                        className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#00d4ff] shadow-[0_0_8px_#00d4ff]"
                         animate={{ opacity: [1, 0.4, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
                     />
-                    <div className="w-[2px] h-3 bg-gray-400 dark:bg-gray-500" />
+                    <div className="w-[2px] h-2 sm:h-3 bg-gray-400 dark:bg-gray-500" />
                 </div>
 
                 {/* Robot Body */}
-                <div className="relative w-[4.5rem] h-16 bg-white dark:bg-gray-800 rounded-[2rem] shadow-glass dark:shadow-neon flex items-center justify-center border border-gray-200 dark:border-white/10 z-10 overflow-hidden">
+                <div className="relative w-[3.8rem] h-14 sm:w-[4.5rem] sm:h-16 bg-white dark:bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] shadow-glass dark:shadow-neon flex items-center justify-center border border-gray-200 dark:border-white/10 z-10 overflow-hidden">
 
                     {/* Inner Face Screen */}
                     <div className="w-[85%] h-[75%] bg-gray-950 rounded-[1.2rem] flex items-center justify-center relative overflow-hidden shadow-inner">
