@@ -14,9 +14,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Anirudh | AI-Powered Full-Stack Developer",
+  title: "Anirudh Joshi | Software Development Engineer",
   description:
-    "Anirudh Joshi — AI-focused full-stack developer specializing in React, Next.js, Three.js, and Generative AI integrations. Building intelligent web solutions.",
+    "Software Development Engineer with 2+ years of professional experience building production web applications with React.js, JavaScript, and modern frontend technologies.",
 };
 
 export default function RootLayout({

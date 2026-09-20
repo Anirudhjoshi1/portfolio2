@@ -8,19 +8,19 @@ import { BsChatDotsFill, BsX, BsArrowUpCircle, BsMoonStars, BsSun, BsClipboardCh
 import toast from "react-hot-toast";
 
 const GREETINGS = [
-    "Hi! I'm AniBot. Look around!",
-    "Scroll down to see the projects!",
-    "Hover over the skill cards!",
-    "Need to contact Anirudh?",
+    "Hi! Looking for a Software Development Engineer?",
+    "Check out the featured production projects below!",
+    "Explore the technical skills & 2+ years SDE experience!",
+    "Need to connect with Anirudh?",
 ];
 
 const SECTION_COMMENTS: Record<string, string> = {
-    Home: "Welcome to the digital realm! 🚀",
-    About: "Learning about the creator, huh? 🧠",
-    Projects: "Check out these cool builds! 💻",
-    Skills: "Neon skills initialized! ⚡",
-    Experience: "A timeline of growth! 📈",
-    Contact: "Send a message, don't be shy! ✉️",
+    Home: "Welcome to Anirudh's portfolio! 🚀",
+    About: "2+ years of professional SDE experience! 👨‍💻",
+    Skills: "Frontend architecture & modern tooling! ⚡",
+    Experience: "Production track record at InstaDataHelp! 📈",
+    Projects: "Check out real client projects & live demos! 🛠️",
+    Contact: "Let's connect for SDE & Frontend roles! ✉️",
 };
 
 export default function AiCompanion() {
@@ -162,11 +162,11 @@ export default function AiCompanion() {
                                     </button>
                                     <a
                                         href="/CV.pdf"
-                                        download="Anirudh_Joshi_CV.pdf"
-                                        onClick={() => toast.success("Downloading CV! 📄")}
+                                        download="Anirudh_Joshi_Resume.pdf"
+                                        onClick={() => toast.success("Downloading Resume! 📄")}
                                         className="flex items-center gap-2 text-xs hover:bg-gray-100 dark:hover:bg-white/10 p-1.5 rounded-lg transition-colors text-gray-600 dark:text-gray-300"
                                     >
-                                        <BsFileEarmarkPdf className="text-red-500" /> Download CV
+                                        <BsFileEarmarkPdf className="text-red-500" /> Download Resume
                                     </a>
                                 </motion.div>
                             )}

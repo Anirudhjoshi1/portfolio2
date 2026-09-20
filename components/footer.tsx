@@ -36,7 +36,7 @@ export default function Footer() {
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
       >
-        React • Next.js • Three.js • Framer Motion
+        React.js • Next.js • Tailwind CSS • Framer Motion
       </motion.p>
     </footer>
   );

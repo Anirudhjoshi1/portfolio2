@@ -20,7 +20,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[55rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-24 max-w-[55rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -87,7 +87,7 @@ export default function Intro() {
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-green-500 dark:bg-green-400 animate-pulse" />
-          AI Agent Online
+          SDE-1 @ InstaDataHelp
         </motion.span>
         <motion.span
           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700 border border-blue-300 dark:bg-neon-blue/10 dark:text-neon-blue dark:border-neon-blue/20 shadow-sm"
@@ -100,7 +100,7 @@ export default function Intro() {
           }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-neon-blue animate-pulse" />
-          Systems Ready
+          React.js & Modern Web
         </motion.span>
         <motion.span
           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700 border border-purple-300 dark:bg-neon-purple/10 dark:text-neon-purple dark:border-neon-purple/20 shadow-sm"
@@ -113,13 +113,13 @@ export default function Intro() {
           }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-purple-500 dark:bg-neon-purple animate-pulse" />
-          Open to Work
+          2+ Years Exp · Open to Work
         </motion.span>
       </motion.div>
 
-      {/* Main Heading with gradient text */}
+      {/* Main Heading with gradient text & underline effects */}
       <motion.h1
-        className="mb-10 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-8 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-gray-900 dark:text-white"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
@@ -129,14 +129,14 @@ export default function Intro() {
           Anirudh.
         </span>{" "}
         I engineer{" "}
-        <span className="font-bold">intelligent web solutions.</span>
+        <span className="font-bold">production-ready web solutions.</span>
         <br />
         I specialize in{" "}
         <motion.span
           className="font-bold relative inline-block"
           whileHover={{ scale: 1.05 }}
         >
-          Full-Stack React Architecture
+          Software Development Engineering
           <motion.span
             className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-neon-blue to-neon-purple"
             initial={{ scaleX: 0 }}
@@ -150,7 +150,7 @@ export default function Intro() {
           className="font-bold relative inline-block"
           whileHover={{ scale: 1.05 }}
         >
-          AI-Driven Development
+          React.js Frontend Architecture
           <motion.span
             className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-neon-purple to-neon-pink"
             initial={{ scaleX: 0 }}
@@ -159,15 +159,14 @@ export default function Intro() {
             style={{ transformOrigin: "left" }}
           />
         </motion.span>
-        . I build scalable, catchy apps that merge robust backend logic with
-        cutting-edge{" "}
+        . With 2+ years of professional experience, I build scalable applications for{" "}
         <span className="italic text-neon-purple dark:text-neon-purple">
-          Generative AI integrations
+          logistics, fleet telematics, construction, energy, and automotive businesses
         </span>
         .
       </motion.h1>
 
-      {/* AI Terminal */}
+      {/* Terminal */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -198,27 +197,31 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 shadow-sm hover:shadow-neon"
+          className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10 dark:border-white/10 dark:bg-white/10 dark:text-white shadow-sm hover:shadow-neon"
           href="/CV.pdf"
-          download="Anirudh_Joshi_CV.pdf"
+          download="Anirudh_Joshi_Resume.pdf"
         >
-          Download CV{" "}
+          Download Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <div className="flex gap-2">
           <a
-            className="bg-white p-4 text-gray-700 hover:text-neon-blue flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-sm hover:shadow-neon"
-            href="https://www.linkedin.com/in/anirudh-joshi-1869b8373/"
+            className="bg-white p-4 text-gray-700 hover:text-neon-blue flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60 dark:border-white/10 shadow-sm hover:shadow-neon"
+            href="https://linkedin.com/in/anirudhjoshi1"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
           >
             <BsLinkedin />
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-sm hover:shadow-neon"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60 dark:border-white/10 shadow-sm hover:shadow-neon"
             href="https://github.com/Anirudhjoshi1"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
           >
             <FaGithubSquare />
           </a>
